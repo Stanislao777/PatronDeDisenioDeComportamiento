@@ -2,13 +2,13 @@
 Implementación de Patrón de Dieño de Comportamiento implementado en C# y haciendo uso de repl.it
 
 
+Este es un problema que plantea el desarrollo de una aplicacion para una universidad en el cual se pueda exportar los datos de los estudiantes en 3 formatos distintos ya sea formato csv, xml o json.
 
-Este es un problema que plantea el desarrollo de una calculadora básica la cuál permite realizar operaciones matemáticas de varios tipos.
+Para resolver este problema se utiliza el patrón Strategy.
 
-En el main se resuelve esta operación matemática:
+El contexto es: ExportarEstudiantes
 
-```
-((1 * 2) + (2 * 2) + (3 * 2) + (4 * 2) + (5 * 2) + (6 * 2) + (7 * 2) + (8 * 2) + (9 * 2) + (10 * 2)) + ((5 + 4) + (1 * 2) + (8 / 3) + (4 / 7) + (3 * 1) + (6 - 12))
-```
-
-La clase Sumatoria(Composite) calcula la suma de todas las operaciones matemáticas que tiene en su lista.
+Las estrategías concretas son:
+- CsvExportar (exporta la lista de estudiantes a formato csv)
+- XmlExportar (exporta la lista de estudiantes a formato xml)
+- JsonExportar (exporta la lista de estudiantes a formato json)
